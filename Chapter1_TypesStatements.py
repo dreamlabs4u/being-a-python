@@ -95,3 +95,42 @@ variable has be created but it is not associated with any value.
 """
 none_thing = None
 print(none_thing)
+
+
+"""
+IF Statements
+-------------
+
+The IF conditional statements works just like any other programming languages but with a minor difference in the styling 
+and formatting. Both IF and else ends with ":" and uses indentation for identifying the code blocks. 
+"""
+test_bool = True
+
+if test_bool == True:
+    print("It's working!")
+else:
+    print("It's not working!")
+
+"""
+The IF statements can also be used to check the truthy and falsy value (whether the variable has been defined or not)
+"""
+truthy_thing = None
+
+if truthy_thing:
+    print("It's defined!")
+else:
+    print("It's not defined!")
+    print("It's not defined!, Multiple blocks")
+"""
+Python also supports ternary if Blocks which yields a value if the condition satisfied and another if otherwise. 
+"""
+print("Smaller") if 1 < 2 else print("larger")
+
+"""
+You can also use multiple conditions in the IF block by using AND | OR
+"""
+
+if ((1 < 2 and 4 < 6) or 1 == 1):
+    print("Multiple statements are checked!")
+else:
+    print("Multiple conditions are not being validated!")
